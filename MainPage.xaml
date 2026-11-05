@@ -1,0 +1,31 @@
+﻿
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBasicAuth.MainPage">
+
+    <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+
+        <Label Text="kwadwo Basic Authentication"
+               Style="{StaticResource Headline}"
+               SemanticProperties.HeadingLevel="Level1"
+               HorizontalOptions="Center" />
+
+        <Entry x:Name="txtUserId"
+               Placeholder="User ID"
+               HorizontalOptions="Center"
+               WidthRequest="300" />
+
+        <Entry x:Name="txtPassword"
+               Placeholder="Password"
+               IsPassword="True"
+               HorizontalOptions="Center"
+               WidthRequest="300" />
+
+        <Button Text="Login"
+               Clicked="OnLoginClicked"
+               HorizontalOptions="Center"
+               WidthRequest="200" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
